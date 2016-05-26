@@ -47,6 +47,9 @@ function rs_admin_init() {
  */
 function rs_create_settings_page() {
 	require __DIR__."/tpl/settings.tpl.php";
+	echo "<script>";
+	require __DIR__."/wp-remote-sync.js";
+	echo "</script>";
 }
 
 /**

@@ -1,5 +1,20 @@
 var lastMessageIsStatus = false;
 
+(function(){
+	console.log("This is coool");
+	document.getElementById("disp_operations_button").onClick = listAllOperations()};
+})();
+
+function listAllOperations(){
+	var httpRequest = new XMLHttpRequest();
+
+	httpRequest.onreadystatechange = function(){
+
+	}
+	httpRequest.open('GET', );
+	httpRequest.send();
+}
+
 function removeLastLine() {
 	var el = document.getElementById("job-output");
 
@@ -84,3 +99,4 @@ function startSyncOperation(url) {
 		jobs(data.message);
 	});
 }
+

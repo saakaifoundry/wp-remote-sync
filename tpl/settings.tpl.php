@@ -91,4 +91,8 @@
         </p>
     </form>
 
+    <form>
+        <button href="#" id="disp_operations_button" onclick="listAllOperations()">Display all the Operations</button>
+    </form>
+
 </div>
