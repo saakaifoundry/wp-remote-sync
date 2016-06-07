@@ -47,6 +47,9 @@ function rs_admin_init() {
  */
 function rs_create_settings_page() {
 	require __DIR__."/tpl/settings.tpl.php";
+	
+	$url=plugins_url()."/wp-remote-sync/op.php?";
+	echo "<script>var url = '$url';</script>";
 	echo "<script>";
 	require __DIR__."/wp-remote-sync.js";
 	echo "</script>";

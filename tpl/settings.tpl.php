@@ -6,7 +6,7 @@
     </p>
 
     <h3>Settings</h3>
-    <form method="post" action="options.php">
+    <form method="post">
         <?php settings_fields( 'rs' ); ?>
         <?php do_settings_sections( 'rs' ); ?>
         <table class="form-table">
@@ -90,9 +90,8 @@
             Pull remote changes, then push local changes.<br/><br/>
         </p>
     </form>
-
-    <form>
-        <button href="#" id="disp_operations_button" onclick="listAllOperations()">Display all the Operations</button>
-    </form>
+        
+        <button id="opListButton" type="submit" name="action" value="Status">Display all the Operations</button>
+        <div id="output"></div>
 
 </div>
